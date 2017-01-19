@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<title>Visa Guide Assignment</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+<div class="container up">
+  <div class="row">
+    <div class="col-sm-3"></div>
+      <div class="col-sm-6">
+        <div class="wrapper">
+          <span class="glyphicon glyphicon-search" aria-hidden="true" style="color:red;"></span>
+        </div>
+        <p class="text-muted wrapper">Please confirm or edit your contact information, so that we can notify you when you are approved for our Beta.</p>
+          <hr>
+          <form method="post" action="/login">
+              <h6 class="text-muted">NAME</h6>
+              <input name="name" type="text" id="input_name" required/>
+          <br><br>
+              <h6 class="text-muted">EMAIL ADDRESS</h6>
+              <input name="email" type="text" id="input_email" required/>
+          <br><br>
+              <h6 class="text-muted">PHONE NUMBER</h6>
+              <input name="num" type="number" id="input_num" placeholder=" Type a phone number" min="0" max="10"/>
+          <hr>
+          <div class="wrapper">
+              <button type="submit" id="signup">Sign Up</button>
+          </div>
+        </form>
+        </div>
+      <div class="col-sm-3"></div>
+  </div>
+</div>
+
+ <script type="text/javascript">
+  $('#signup').click(function(){
+    console.log("this works!!!!");
+  });
+ </script>
+</body>
+</html>
